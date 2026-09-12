@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="经核验的全球 AI 最新资讯简报，覆盖 OpenAI、Google、Microsoft、Anthropic、百度与腾讯等公开渠道。">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>AI 资讯档案｜2026.09.12</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0a'/%3E%3Cpath d='M16 44 27 18h10l11 26h-9l-2-6H27l-2 6Zm14-13h5l-2.5-8Z' fill='white'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#0a0a0a;--paper:#f5f5f3;--line:#c9c9c4;--muted:#666661;--soft:#e9e9e5;--max:1320px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;font-size:16px;line-height:1.68}
+    a{color:inherit}
+    .masthead{border-bottom:1px solid var(--ink);padding:20px 28px}
+    .masthead-inner{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;align-items:center;gap:24px}
+    .brand{font-weight:800;letter-spacing:-.04em;font-size:1.2rem}
+    .issue{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+    main{max-width:var(--max);margin:auto;padding:54px 28px 96px}
+    .intro{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(270px,.7fr);gap:80px;padding-bottom:48px;border-bottom:2px solid var(--ink)}
+    h1{font-family:Georgia,"Songti SC","STSong",serif;font-size:clamp(3.2rem,8vw,7.4rem);line-height:.94;letter-spacing:-.065em;margin:0;max-width:900px;font-weight:500}
+    .dek{align-self:end;margin:0;font-size:1.02rem;color:#30302d;max-width:38ch}
+    .dek strong{display:block;color:var(--ink);font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+    .statusbar{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--ink)}
+    .status{padding:17px 0;border-right:1px solid var(--line);font-size:.78rem;letter-spacing:.04em;color:var(--muted)}
+    .status:not(:first-child){padding-left:18px}.status:last-child{border-right:0}
+    .status b{display:block;color:var(--ink);font-size:1rem;letter-spacing:0;margin-top:2px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;padding:46px 0 20px;border-bottom:1px solid var(--ink)}
+    h2{font-family:Georgia,"Songti SC","STSong",serif;font-size:clamp(2rem,4vw,3.6rem);font-weight:500;letter-spacing:-.045em;line-height:1;margin:0}
+    .legend{font-size:.76rem;color:var(--muted);margin:0;text-align:right}
+    .feed{display:grid}
+    .story{display:grid;grid-template-columns:130px 1fr 190px;gap:30px;padding:34px 0;border-bottom:1px solid var(--line);transition:background .2s ease,padding .2s ease}
+    .story:hover{background:#fff;padding-left:14px;padding-right:14px}
+    .date{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.8rem;letter-spacing:.06em;color:var(--muted);padding-top:5px}
+    .rank{display:block;font-family:Georgia,serif;color:var(--ink);font-size:2.3rem;line-height:1;margin-bottom:18px}
+    .story h3{font-family:Georgia,"Songti SC","STSong",serif;font-size:clamp(1.45rem,2.6vw,2.25rem);line-height:1.18;letter-spacing:-.025em;margin:0 0 15px;font-weight:500}
+    .context{font-size:.86rem;color:var(--muted);margin:0 0 10px}.context b{color:var(--ink)}
+    .summary{font-size:1rem;margin:0;max-width:780px;color:#292927}
+    .source{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:18px;padding-top:5px}
+    .tag{border:1px solid var(--ink);padding:4px 9px;border-radius:999px;font-size:.72rem;line-height:1.3;letter-spacing:.05em;white-space:nowrap}
+    .verified{font-size:.78rem;color:var(--muted);margin:0}.verified::before{content:"✓";display:inline-grid;place-items:center;width:19px;height:19px;border:1px solid var(--ink);border-radius:50%;margin-right:7px;color:var(--ink)}
+    .source-link{font-size:.82rem;text-underline-offset:4px;text-decoration-thickness:1px}.source-link:hover{text-decoration-thickness:2px}
+    .method{margin-top:64px;background:var(--ink);color:white;padding:38px;display:grid;grid-template-columns:.7fr 1.3fr;gap:64px}
+    .method h2{font-size:2.2rem}.method p{margin:0;color:#cfcfca;max-width:70ch}.method strong{color:white}
+    footer{max-width:var(--max);margin:auto;padding:26px 28px 42px;border-top:1px solid var(--ink);display:flex;justify-content:space-between;gap:20px;font-size:.75rem;color:var(--muted)}
+    @media(max-width:820px){.intro{grid-template-columns:1fr;gap:35px}.statusbar{grid-template-columns:1fr 1fr}.status:nth-child(2){border-right:0}.story{grid-template-columns:82px 1fr}.source{grid-column:2;flex-direction:row;flex-wrap:wrap;align-items:center}.method{grid-template-columns:1fr;gap:24px}}
+    @media(max-width:540px){.masthead{padding:16px 18px}.masthead-inner{align-items:flex-start}.issue{text-align:right}main{padding:36px 18px 70px}h1{font-size:3.15rem}.status{padding:13px 8px!important}.section-head{align-items:flex-start;flex-direction:column}.legend{text-align:left}.story{grid-template-columns:1fr;gap:12px;padding:28px 0}.story:hover{padding-left:8px;padding-right:8px}.date{display:flex;align-items:center;gap:12px}.rank{display:inline;font-size:1.4rem;margin:0}.source{grid-column:1}.method{padding:28px 22px}footer{padding:22px 18px 34px;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner"><div class="brand">AI 资讯档案</div><div class="issue">ISSUE 001 · 2026.09.12 · 简体中文</div></div>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <h1 id="page-title">一周 AI<br>关键信号</h1>
+      <p class="dek"><strong>编辑说明</strong>从企业官网与公开渠道中筛选值得关注的更新。每条资讯均核对发布日期、原始表述与产品状态；涉及性能和规模的数据，明确标注为发布方自述。</p>
+    </section>
+    <div class="statusbar" aria-label="本期概览">
+      <div class="status">收录数量<b>7 条</b></div>
+      <div class="status">覆盖机构<b>6 家</b></div>
+      <div class="status">时间范围<b>08.28—09.11</b></div>
+      <div class="status">核验状态<b>全部已核验</b></div>
+    </div>
+    <section aria-labelledby="latest-title">
+      <div class="section-head"><h2 id="latest-title">最新资讯</h2><p class="legend">按发布日期倒序 · 点击来源阅读全文</p></div>
+      <div class="feed">
+        <article class="story">
+          <div class="date"><span class="rank">01</span>2026.09.11</div>
+          <div><h3>OpenAI 披露支撑超 10 亿周活用户的在线存储架构</h3><p class="context"><b>背景：</b>ChatGPT 使用规模持续增长，在线存储成为产品可靠性与成本控制的关键基础设施。</p><p class="summary">OpenAI 介绍内部存储平台 Habitat：其承载每秒 7,000 万次以上请求和 500PB 以上数据。团队称已用 Rust 重写核心服务，目前处理 95% 的生产请求；与 Python 版本相比，CPU 效率提高 6 倍、内存效率提高 15 倍。上述规模与效率数据均为 OpenAI 官方自述。</p></div>
+          <div class="source"><span class="tag">OPENAI · 工程</span><p class="verified">官方原文核验</p><a class="source-link" href="https://openai.com/index/scaling-storage-one-billion-users-part-one/" target="_blank" rel="noopener">查看原始来源 ↗</a></div>
+        </article>
+        <article class="story">
+          <div class="date"><span class="rank">02</span>2026.09.11</div>
+          <div><h3>百度开放公测文档矫正增强与去手写 V2</h3><p class="context"><b>背景：</b>文档数字化正从基础 OCR 转向复杂版面修复、手写痕迹清理与结构化处理。</p><p class="summary">百度 AI 开放平台公告显示，“文档矫正增强 V2”和“文档去手写 V2”已开放公测，重点升级智能矫正与手写痕迹去除能力，并提供限量免费测试资源。页面同时显示 PP-OCRv6 已于 9 月 7 日转入商用。</p></div>
+          <div class="source"><span class="tag">百度 · 官方公告</span><p class="verified">官方列表核验</p><a class="source-link" href="https://ai.baidu.com/support/news" target="_blank" rel="noopener">查看原始来源 ↗</a></div>
+        </article>
+        <article class="story">
+          <div class="date"><span class="rank">03</span>2026.09.10</div>
+          <div><h3>OpenAI 发布 Agents API 公测版</h3><p class="context"><b>背景：</b>开发者通常需要自行处理智能体的上下文、工具编排、长任务恢复与运行环境。</p><p class="summary">Agents API 将 Codex 使用的智能体运行框架以托管服务形式开放。开发者可选择 OpenAI 托管沙箱、自有基础设施或合作伙伴环境，并使用长会话、工具检索和子智能体并行能力。该产品目前为公开测试版，费用按模型与工具使用量计算。</p></div>
+          <div class="source"><span class="tag">OPENAI · 产品</span><p class="verified">官方原文核验</p><a class="source-link" href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">查看原始来源 ↗</a></div>
+        </article>
+        <article class="story">
+          <div class="date"><span class="rank">04</span>2026.09.10</div>
+          <div><h3>Anthropic 发布 2026 年 9 月 AI 滥用威胁报告</h3><p class="context"><b>背景：</b>前沿模型能力提升后，网络攻击、欺诈、监控与模型蒸馏等滥用方式也在演化。</p><p class="summary">Anthropic 汇总了 2025 年 12 月至 2026 年 8 月间被发现并处置的案例，覆盖网络行动、影响力行动、监控、诈骗、生物风险、常规武器与非法蒸馏七类。官方称已封禁相关账户、强化监控，并在适当情况下与执法及行业伙伴共享情报。</p></div>
+          <div class="source"><span class="tag">ANTHROPIC · 安全</span><p class="verified">官方报告核验</p><a class="source-link" href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener">查看原始来源 ↗</a></div>
+        </article>
+        <article class="story">
+          <div class="date"><span class="rank">05</span>2026.09.09</div>
+          <div><h3>Google 更新 AI 订阅计划，扩展跨应用智能体体验</h3><p class="context"><b>背景：</b>生成式 AI 正从单一对话入口进入邮件、文档、表格、浏览器与照片等日常工作流。</p><p class="summary">Google 公布秋季 AI 订阅更新：语音能力进入 Gmail、Docs 与 Keep；Google Pics 和 Sheets canvas 面向部分 Pro/Ultra 用户开放；Gemini Spark 可连接 Chrome 与 Google Photos，执行网页事务、图片编辑与相册整理。部分功能仅限美国或指定套餐。</p></div>
+          <div class="source"><span class="tag">GOOGLE · 产品</span><p class="verified">官方原文核验</p><a class="source-link" href="https://blog.google/products-and-platforms/products/google-one/fall-2026-ai-plan-updates/" target="_blank" rel="noopener">查看原始来源 ↗</a></div>
+        </article>
+        <article class="story">
+          <div class="date"><span class="rank">06</span>2026.09.09</div>
+          <div><h3>Microsoft 恢复 Microsoft 365 Copilot 域名排除功能</h3><p class="context"><b>背景：</b>企业使用联网检索增强 Copilot 时，需要控制哪些外部网站可参与答案生成。</p><p class="summary">Microsoft 社区公告显示，Domain Exclusion 功能重新可用，管理员可排除指定域名，进一步控制 Microsoft 365 Copilot 的网页信息引用范围。这是一项治理与合规向更新，重点不在模型能力，而在企业对外部来源的管理权。</p></div>
+          <div class="source"><span class="tag">MICROSOFT · 治理</span><p class="verified">官方社区核验</p><a class="source-link" href="https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog" target="_blank" rel="noopener">查看原始来源 ↗</a></div>
+        </article>
+        <article class="story">
+          <div class="date"><span class="rank">07</span>2026.08.28</div>
+          <div><h3>腾讯发布并开源混元 Hy4 preview</h3><p class="context"><b>背景：</b>国内开源模型竞争正转向长上下文、代码能力和真实生产力任务。</p><p class="summary">腾讯称 Hy4 preview 总参数 770B、激活参数 49B，上下文长度超过 1M，并已在 WorkBuddy、CodeBuddy、元宝与 ima 等产品上线。模型定位代码、办公、科研和游戏开发等场景；腾讯公布的内部盲测和效率提升数据属于厂商自测结果，尚需第三方评测补充验证。</p></div>
+          <div class="source"><span class="tag">腾讯 · 模型</span><p class="verified">官方原文核验</p><a class="source-link" href="https://www.tencent.com/zh-cn/tencent-releases-and-open-sources-tencent-hy4-preview/" target="_blank" rel="noopener">查看原始来源 ↗</a></div>
+        </article>
+      </div>
+    </section>
+    <section class="method" aria-labelledby="method-title"><h2 id="method-title">核验方法</h2><p><strong>优先级：</strong>公司官网、官方博客和官方公告优先；社交媒体与转载仅作为线索，不单独构成事实依据。<br><strong>准确性：</strong>核对发布日期、产品阶段、适用地区与限定条件；厂商公布的性能、规模和排名数据均明确归因，不写成独立结论。<br><strong>语言：</strong>所有摘要均为简体中文编辑译写，原始专有名词与产品名保留英文，避免歧义。</p></section>
+  </main>
+  <footer><span>AI 资讯档案 · 公开信息编辑简报</span><span>最后核验：2026 年 9 月 12 日（Asia/Shanghai）</span></footer>
+</body>
+</html>
+
